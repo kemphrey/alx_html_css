@@ -1,0 +1,71 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+:root {
+    --primary-color: #FF6565;
+    --secondary-color: #333;
+    --font-family: 'Source Sans Pro', sans-serif;
+    --max-width: 1000px
+}
+.feature {
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease;
+}
+
+.feature:hover {
+    transform: scale(1.1);
+    opacity: 0.8;
+}
+.feature i {
+    display: inline-block;
+    animation: float 2s ease-in-out infinite;
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+.pentagon {
+    transition: transform 0.4s ease;
+}
+
+.pentagon:hover {
+    transform: translateY(-10px) scale(1.1);
+}
+.result {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeSlideIn 1s ease forwards;
+}
+
+@keyframes fadeSlideIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Optional delay for staggered animation */
+.result:nth-child(1) {
+    animation-delay: 0.2s;
+}
+.result:nth-child(2) {
+    animation-delay: 0.4s;
+}
+.result:nth-child(3) {
+    animation-delay: 0.6s;
+}

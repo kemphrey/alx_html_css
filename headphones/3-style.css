@@ -1,0 +1,26 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+:root {
+    --primary-color: #FF6565;
+    --secondary-color: #333;
+    --font-family: 'Source Sans Pro', sans-serif;
+    --max-width: 1000px
+}
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+input, textarea, button {
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}

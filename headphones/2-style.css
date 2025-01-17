@@ -20,3 +20,10 @@ body {
     border-width: 0 50px 87px 50px;
     border-color: transparent transparent var(--primary-color) transparent;
 }
+.results-grid {
+    display: flex;
+    justify-content: space-between;
+}
+h2{
+    text-align: center;
+}
